@@ -1,0 +1,38 @@
+body{
+    display:flex;
+    margin:5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+    cursor:pointer;
+}
+input{
+    cursor:auto;
+}
+
+.cash-on-delivery{
+    flex:1;
+    border:1px solid grey;
+    padding: 1rem;
+}
+.right-section{
+    flex:1;
+}
+.confirm-order-button{
+    display:none;
+    font-size:16px;
+    letter-spacing: 1px;;
+    color:white;
+    font-weight:bold;
+    height:45px;
+    width:100%;
+    border:none;
+    background-color:rgb(36, 151, 36);
+}
+
+.green-tick-block{
+    width:15rem;
+    height:15rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .empty-cart-block{
+            display: flex;
+            flex-direction: column;
+            text-align:center;
+            align-items: center;
+            height:20rem;
+            width:25rem;
+        }
+        img{
+            height:100%;
+            width:100%;
+        }
+        .home-page-button{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;;
+            width:10rem;
+            height:3rem;
+            border:1px solid green ;
+            background: transparent;
+            color:green;
+            font-weight:bold;
+            letter-spacing: 1.5px;
+            border-radius: 5px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div style="display:flex; flex-direction: column; align-items: center; height:60vh ; justify-content: center;">
+        <div class="empty-cart-block">
+            <img src="images/empty-cart (2).png">
+            <div>There is nothing in your Cart. Let's add some items</div>
+        </div>
+        <div style="margin-top: 40px;;">
+            <a href="Home.html"><button class="home-page-button">HOME PAGE</button></a>
+        </div>
+    </div>
+
+    <script>
+        function getDeliveryDate(daysToAdd) {
+            const deliveryDate = new Date();
+            deliveryDate.setDate(deliveryDate.getDate() + daysToAdd);
+
+            const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            const months = [
+                "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+            ];
+
+            const dayOfWeek = daysOfWeek[deliveryDate.getDay()];
+            const day = deliveryDate.getDate();
+            const month = months[deliveryDate.getMonth()];
+            const year = deliveryDate.getFullYear();
+
+            return `Delivery by ${dayOfWeek} | ${day} ${month} ${year}`;
+        }
+
+        // Example usage:
+        console.log(getDeliveryDate(6));  // Delivery by (date 6 days from today)
+        console.log(getDeliveryDate(7));  // Delivery by (date 7 days from today)
+        console.log(getDeliveryDate(20));  // Delivery by (date 8 days from today)
+
+    </script>
+</body>
+</html>

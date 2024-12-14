@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="Styles/Cart.css">
+
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="header-left-block">
+                <div class="mobilemart-logo-image-block" onclick='window.open("http://127.0.0.1:5501/Home.html" , "_self")'>
+                    <img class="mobilemart-logo-image" src="images/mobilemart-logo(1).png">
+                </div>
+            </div>
+            <div class="header-middle-block">
+                <div class="search-block">
+                    <input class="search-input" type="text" placeholder="Search">
+                    <button class="search-button"><img src="images/search-icon.png"></button> 
+                </div>
+            </div>
+            <div class="header-right-block">
+                <div class="profile-block">
+                    <a class="profile-button" href="">
+                        <img src="images/profile-image.svg">
+                        <div class="logined-name">Login/SignUp</div>
+                    </a>
+                </div> 
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="cart-products js-cart-products">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+        </div>
+        <div>
+            <div class="right-section">
+                <div class="order-summary">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="javascript/Cart.js"></script>
+    <script type="module" src="javascript/Order_summary.js" ></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,353 @@
+body{
+    background-color:rgb(226, 226, 226);
+    margin:4rem 20rem;
+}
+
+img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+button{
+    cursor:pointer;
+}
+input{
+    cursor:auto;
+}
+.header{
+    display: flex;
+    width:100%;
+    height:70px;
+    /* background-color: red;; */
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index: 2;
+}
+
+.header-left-block{
+    display:flex;
+    flex:1;
+    justify-content: center;
+}
+.header-middle-block{
+    display:flex;
+    flex:1;
+}
+.header-right-block{
+    display:flex;
+    flex:1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.mobilemart-logo-image-block{
+    width:180px;
+    height:50px;
+    cursor:pointer;
+}
+
+.mobilemart-logo-image{
+    width:100%;
+    height:100%;
+}
+
+.cart-block{
+    display:flex;
+    position: relative;
+    align-items: center;
+    height:30px;
+    font-size: 18px;
+    gap:3px;
+}
+
+.cart-button{
+    display:flex;
+    align-items: center;
+    height:30px;
+    font-size: 18px;
+    gap:3px;
+    color:black;
+    text-decoration: none;
+}
+.js-cart-qty{
+    position: absolute;
+    font-size:16px;
+    height: 20px;
+    width:20px;
+    top: -10px;
+    left:15px;
+    border-radius: 50%;
+    text-align: center;
+    color:white;
+    background-color: red;
+}
+.notification-block{
+    height:30px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.notification-button{
+    height:30px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    color:black;
+    text-decoration: none;
+}
+.profile-block{
+    display:flex;
+    align-items: center;
+    /* background-color: blue; */
+    font-size:17px;
+    height:40px;
+}
+
+.profile-button{
+    display:flex;
+    position: relative;
+    align-items: center;
+    gap:3px;
+    /* background-color: blue; */
+    font-size:17px;
+    height:40px;
+    color:black;
+    text-decoration: none;
+    cursor:pointer;
+    background: none;
+    border:none;
+}
+.profile-more-information{
+  display:flex;
+  display:none;
+  /* background-color:red;; */
+  width:8rem;
+  height:6rem;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 5px;;
+  top:35px;
+  left:35px;
+}
+.cap{
+  font-size: 16px;
+  rotate: 90deg;
+  width:1.2rem;
+  margin-left:0.2rem;
+  transition-duration: 0.5s;
+}
+.profile-button:hover .profile-more-information{
+  display:flex;
+}
+.profile-button:hover .cap{
+  rotate: 270deg;
+  transition-duration: 0.5s;
+}
+.my-orders-block, .profile-logout-block{
+  display: flex;
+  flex:1;
+  align-items: center;
+  background-color: white;
+}
+.my-orders-block:hover , .profile-logout-block:hover{
+  background-color: rgba(230, 226, 226, 0.988);
+  z-index: 2;
+}
+
+.search-block{
+    display:flex;
+    position: relative;
+    width:100%;
+}
+.search-input{
+    width:100%;
+    height:35px;
+    border:none;
+    border-radius: 18px;
+    padding:5px 15px;
+    box-shadow: 0px 0px 5px rgba(0 , 0 , 0 , 0.5);
+    font-size:16px;
+
+}
+
+.search-button{
+    position: absolute;
+    height:20px;
+    width:20px;
+    padding:0px;
+    background-color: none;
+    border:none;
+    right:15px;
+    top:11px;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    /* background-color: red; */
+    gap:1rem;
+    justify-content: center;
+}
+.left-section{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    margin-top:1rem;
+}
+.my-orders-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height:2rem;
+    
+}
+.price-details{
+    font-weight:bold;
+    border-width:1px;
+    border-bottom-style:solid;
+}
+.total-mrp , .discount-on-mrp , .platform-fee , .shipping-fee{
+    display:flex;
+    justify-content: space-between;
+    margin:10px 0px;
+}
+.discount-amount{
+    color:green;
+}
+.platform-fee-amount , .shipping-fee-amount{
+    font-size:10px;
+    color:green;
+}
+.shipping-fee-amount .amount{
+    text-decoration: line-through;
+    color:black;
+}
+.shipping-fee-amount .amount-2{
+    color:black;
+}
+.total-amount{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-size:18px;
+    font-weight:bold;
+    padding:10px 0px;
+    border-top-style:dashed;
+    border-bottom-style:dashed;
+    border-width:1px;
+}
+.cart-products{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    min-width:100px;
+    /* background-color:green; */
+}
+.cart-product-information{
+    display:flex;
+    flex-direction:row;
+    padding:10px 10px;
+    border:1px solid rgb(190, 187, 187);
+    margin-top:10px;
+    background-color: white;
+    }
+.cart-product-image{
+    display:flex;
+    width:9rem;
+    height:10rem;
+    padding:1rem;
+}
+.cart-image{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.cart-product-details{
+    /* display:inline-block; */
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+    flex:1;
+    overflow: hidden;
+    gap:0.5rem;
+}
+.cart-name{
+    font-size:1.2rem;
+    margin:0.4rem;
+}
+.cart-price-details{
+    display:flex;
+    gap:0.3rem;
+    margin:5px;
+}
+.cart-price{
+    font-size:1.2rem;
+    display:inline-block;
+    color:black;
+    font-weight:bolder;
+}
+.cart-actual-price{
+    font-size:1.2rem;
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    color:grey;
+    display:inline-block;
+}
+.cart-discount{
+    display:inline-block;
+    color:green;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+.cart-product-qty{
+    display:flex;
+    font-size:18px;
+    align-items: center;
+    gap:4px;
+    margin-left:0.4rem;
+}
+
+.minus-button , .plus-button{
+    font-size:14px;;
+    padding:0.5rem 0.7rem;
+    /* height:1rem;
+    width:1rem; */
+    border-radius: 50%;
+    text-align: justify;
+    border:1px solid grey;
+    background: none;;
+}
+
+.empty-cart-block{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    height:22rem;
+    width:25rem;
+}
+img{
+    height:100%;
+    width:100%;
+}
+.home-page-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;;
+    width:10rem;
+    height:3rem;
+    border:1px solid green ;
+    background: transparent;
+    color:green;
+    font-weight:bold;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+
+}

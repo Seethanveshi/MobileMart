@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/Address.css"></link>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header class="header">
+                <div class="header-left-block">
+                    <div class="mobilemart-logo-image-block" onclick='window.open("http://127.0.0.1:5501/Home.html" , "_self")'>
+                        <img class="mobilemart-logo-image" src="images/mobilemart-logo(1).png">
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="addresses-field" style="display:flex; flex-direction: column; align-items: center; justify-content:center; margin-top: 5rem; gap:1rem;">
+            
+        </div>
+        <div style="display:flex; justify-content:center; margin-top:1rem;">
+            <div class="adress-field" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width:35%; border:1px solid grey;">
+                <div style="margin:1rem">NEW ADDRESS</div> 
+                <form class="address-form">
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div style="display: flex; flex-direction: column; gap:0.5rem; width:80%">
+                            <div style="font-size:18px; text-align: center; margin-bottom: 0.5rem;">Contact Details</div>
+                            <input id="full-name" type="text" placeholder="Full Name*" required>
+                            <input id="mobile-number" type="text" placeholder="Mobile Number*" required>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap:0.5rem; align-items: center; width:100%">
+                            <div style="font-size:18px; margin:1rem 0rem 0.5rem 0rem ;">Address</div>
+                            <div style="display: flex; align-items: center; justify-content: center; gap:0.5rem; width:100%">
+                                <textarea id="address" style="font-size:16px; padding:0.5rem;" rows="2" cols="45" placeholder="House No , Building Name , street*" required></textarea>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center; gap:0.5rem; width:100%">    
+                                <input id="town-city" type="text" placeholder="Town/City*" required>
+                                <input id="landmark" type="text" placeholder="LandMark*" required>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center; gap:0.5rem; width:88%">
+                                <select id="states" name="states*" required>
+                                    <option value="">Select State</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Ladakh">Ladakh</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                </select>
+                                <select id="districts" name="districts" required>
+                                    <option>Select District</option>
+                                </select>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center; gap:0.5rem; width:88%">
+                                <input style="width: 100%;" id="pincode" type="text" placeholder="PinCode*" required>
+                            </div>
+                        </div>
+                        <div style="margin: 1rem;" class="submit-button">
+                            <input id="submit-button" type="submit" value="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="javascript/Address.js"></script>
+</body>
+</html>

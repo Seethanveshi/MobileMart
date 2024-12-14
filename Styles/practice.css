@@ -1,0 +1,287 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:hwb(0 82% 17%);
+    gap:100px;
+}
+
+.Login-Signin-page{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.Login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(252, 250, 250);
+    width: 350px;
+    height: 420px;
+    border-radius: 20px;
+    /* background-color: green; */
+}
+
+.Login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-back-title{
+    font-size:24px;
+    margin:15px;
+}
+
+.login-title {
+    margin: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.login-email-block , .login-password-block{
+    position:relative;
+    margin:10px;
+}
+
+.login-email, .login-password {
+    padding: 10px 5px;
+    width: 15rem;
+    border: none; /* Add a border */
+    border-radius: 10px;
+    padding:12px 8px;
+    font-size:16px;
+    background-color: rgb(224, 224, 224);
+}
+
+.login-button-block{
+    width: 16rem;
+}
+.login-button{
+    color:white;
+    width:100%;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    background-color:green;
+}
+
+.login-email:focus, .login-password:focus {
+    border:none;
+}
+
+.login-email-placeholder , .login-password-placeholder{
+    position: absolute;
+    color: grey; 
+    pointer-events: none; 
+    left:8px;
+    top:10px;
+    transition: all 0.3s;
+}
+
+
+.login-email:focus + .login-email-placeholder{
+    top:-18px;
+    color: black;
+}
+
+.login-password:focus + .login-password-placeholder{
+    top:-18px;
+    color:black;
+}
+
+.forget-password{
+    display:flex;
+    justify-content: end;
+    margin:5px;
+    width:16rem;
+}
+
+.forget-password-button{
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+.create-a-new-account{
+    margin:10px;
+}
+
+.register{
+    color:rgb(96, 96, 233);
+    cursor:pointer;
+    padding:0px;
+    border:none;
+    background-color: transparent;
+}
+
+
+.Sign-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(252, 250, 250);
+    width: 350px;
+    height: 420px;
+    border-radius: 10px;
+}
+
+.Sign-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-title {
+    margin: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.signup-name-block, .signup-email-block , .signup-password-block, .signup-confirm-password-block{
+    position:relative;
+    margin:10px;
+}
+
+.signup-name, .signup-email, .signup-password, .signup-confirm-password {
+    padding: 10px 5px;
+    width: 15rem;
+    border: none; /* Add a border */
+    border-radius: 10px;
+    padding:12px 8px;
+    font-size:16px;
+    background-color: rgb(224, 224, 224);
+}
+
+.signup-button-block{
+    width: 16rem;
+}
+.signup-button{
+    color:white;
+    width:100%;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    background-color:green;
+}
+
+.signup-email:focus, .signup-password:focus {
+    border:none;
+}
+
+.signup-name-placeholder, .signup-email-placeholder , .signup-password-placeholder, .signup-confirm-password-placeholder{
+    position: absolute;
+    color: grey; 
+    pointer-events: none; 
+    left:8px;
+    top:10px;
+    transition: all 0.3s;
+}
+
+.signup-name:focus + .signup-name-placeholder{
+    top:-18px;
+    color: black;
+}
+
+.signup-email:focus + .signup-email-placeholder{
+    top:-18px;
+    color: black;
+}
+
+.signup-password:focus + .signup-password-placeholder{
+    top:-18px;
+    color:black;
+}
+
+.signup-confirm-password:focus + .signup-confirm-password-placeholder{
+    top:-18px;
+    color:black;
+}
+.login-account{
+    margin:10px;
+}
+
+.login{
+    color:rgb(96, 96, 233);
+    cursor:pointer;
+    padding:0px;
+    border:none;
+    background-color: transparent;
+}
+
+
+
+.LOGIN-PAGE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:green;
+    width: 350px;
+    height: 420px;
+    border-radius: 20px;
+    /* background-color: green; */
+}
+
+.WELCOME-BACK-TITLE{
+    font-size:24px;
+    margin:15px;
+    color:white;
+}
+
+.PARAGRAPH{
+    width:250px;
+    text-align: center;
+    color:white;
+}
+
+.LOGIN-BUTTON{
+    padding:15px 35px;
+    border-color:rgb(216, 216, 216);
+    border-style:solid;
+    border-radius:20px;
+    margin:20px;
+    color:white;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+
+.SIGNUP-PAGE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:green;
+    width: 350px;
+    height: 420px;
+    border-radius: 20px;
+    /* background-color: green; */
+}
+
+.WELCOME-BACK-TITLE{
+    font-size:24px;
+    margin:15px;
+    color:white;
+}
+
+.PARAGRAPH{
+    width:250px;
+    text-align: center;
+    color:white;
+}
+
+.SIGNUP-BUTTON{
+    padding:15px 35px;
+    border-color:rgb(216, 216, 216);
+    border-style:solid;
+    border-radius:20px;
+    margin:20px;
+    color:white;
+    background-color: transparent;
+    cursor:pointer;
+}
