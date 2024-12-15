@@ -85,7 +85,7 @@ export function single_mobile_display(mobile_name){
 
 
 let add_to_cart_button=document.querySelector(".add-to-cart-button");
-add_to_cart_button.addEventListener("click" , ()=>{
+if(add_to_cart_button){ add_to_cart_button.addEventListener("click" , ()=>{
     let mobileId=add_to_cart_button.dataset.mobileId;
     let qty=1 , exists=0;
 
@@ -115,6 +115,7 @@ add_to_cart_button.addEventListener("click" , ()=>{
     } , 3000);
 
 })
+}
 
 
 let buy_now_button=document.querySelector(".buy-now-button");
