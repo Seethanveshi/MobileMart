@@ -283,7 +283,7 @@ let logined_name=JSON.parse(localStorage.getItem("logined_name"));
 let profile_block=document.querySelector(".profile-block");
 if(logined_name=="Login/SignUp"){
     profile_block.innerHTML=`
-        <a class="profile-button" href="Login&Sign-page.html">
+        <a class="profile-button" href="index.html">
             <img src="images/profile-image.svg">
             <div class="logined-name">Login/SignUp</div>
         </a>
@@ -300,7 +300,7 @@ else{
                 <a href="my_orders.html" style="text-decoration: none;" href=""><div class="my-orders" style="display: flex; color:black; margin-left:8px;"><img style="width:1.5rem; height:1.5rem; margin-right:4px;" src="images/parcel-symbol.png"> My Orders</div></a>
             </div>
             <div class="profile-logout-block">
-                <a style="text-decoration: none;" href="Login&Sign-page.html"><div class="profile-logout" style="display: flex; color:black; margin-left:8px;"><img style="width:1.5rem; height:1.5rem; margin-right:4px;" src="images/logout-symbol.webp">Logout</div></a>
+                <a style="text-decoration: none;" href="index.html"><div class="profile-logout" style="display: flex; color:black; margin-left:8px;"><img style="width:1.5rem; height:1.5rem; margin-right:4px;" src="images/logout-symbol.webp">Logout</div></a>
             </div>
             </div>
         </button>
