@@ -75,7 +75,7 @@ export function display_order_summary(){
                     window.location.href="index.html";
                 }
                 else{
-                    window.location.href="address.html";
+                    window.location.href="Address.html";
                 }
             })
         }
