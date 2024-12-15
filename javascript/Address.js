@@ -52,7 +52,7 @@ if(address_form) address_form.addEventListener("submit" , (event)=>{
     updated_addresses.push(full_address);
     localStorage.setItem("addresses"  , JSON.stringify(updated_addresses));
 
-    window.location.href='address.html';
+    window.location.href='Address.html';
 })
 
 let updated_addresses=JSON.parse(localStorage.getItem("addresses")) || [];
