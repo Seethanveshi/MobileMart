@@ -119,7 +119,7 @@ if(add_to_cart_button){ add_to_cart_button.addEventListener("click" , ()=>{
 
 
 let buy_now_button=document.querySelector(".buy-now-button");
-buy_now_button.addEventListener("click" , ()=>{
+if(buy_now_button){ buy_now_button.addEventListener("click" , ()=>{
     let mobileId=buy_now_button.dataset.mobileId;
     let qty=1 , exists=0;
 
@@ -141,7 +141,7 @@ buy_now_button.addEventListener("click" , ()=>{
     display_cart_qty(cart.length);
     window.location.href="Cart.html";
 })
-
+}
 function returnimg(mobileids){
     let src="";
     all_available_mobiles.forEach(mobiles =>{
