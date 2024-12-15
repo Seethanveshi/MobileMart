@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="Styles/Home.css">
+     
+    <title>MobileMart/Home</title>
+</head>
+<body style="height:100vh">
+    
+    <div>
+        <div>
+            <header class="header">
+                <div class="header-left-block">
+                    <div class="mobilemart-logo-image-block" onclick='window.open("Home.html" , "_self")'>
+                        <img class="mobilemart-logo-image" src="images/mobilemart-logo(1).png">
+                    </div>
+                </div>
+                <div class="header-middle-block">
+                    <div class="search-block">
+                        <input class="search-input" type="text" placeholder="Search">
+                        <button class="search-button"><img src="images/search-icon.png"></button> 
+                    </div>
+                </div>
+                <div class="header-right-block">
+                    <div class="cart-block">
+                        <a class="cart-button" href="Cart.html">
+                            <img src="images/cart-image.svg">
+                            <div>Cart</div>
+                        </a>
+                        <div class="cart-qty js-cart-qty"></div>
+                    </div>
+                    <div class="notification-block">
+                        <a class="notification-button" href="">
+                            <img src="images/notification-icon.jpg">
+                            <div>Notifications</div>
+                        </a>
+                    </div>
+                    <div class="profile-block">
+                        <a class="profile-button" href="">
+                            <img src="images/profile-image.svg">
+                            <div class="logined-name">Login/SignUp</div>
+                        </a>
+                    </div> 
+                </div>
+            </header>
+        </div>
+
+
+        <div class="container">
+            <div> 
+                <div class="image-slider">
+                    <img class="slide for-single-mobile" data-mobile-name="Nothing Phone (2a) Plus" src="images/nothing-phone-2a-slide.png">
+                    <img class="slide for-single-mobile" data-mobile-name="Apple iPhone 16" src="images/iphone-16-slide.png">
+                    <img class="slide for-single-mobile" data-mobile-name="OnePlus 12" src="images/oneplus-12-slide.png">
+
+                    <button class="prev"> < </button>
+                    <button class="next"> > </button>
+
+                    <button class="dot-1">&#9675;</button>
+                    <button class="dot-2">&#9675;</button>
+                    <button class="dot-3">&#9675;</button>
+                </div>
+            </div>
+
+            <div style="background-color: white; margin-top:0.8rem;">
+                <div class="all-brands">
+                    <button class="mobiles" data-mobiles-name="samsung">
+                        <img class="mobile-logo" src="images/samsung-galaxy-s23.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Samsung Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="realme">
+                        <img class="mobile-logo" src="images/realme-gt-master-edition.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Realme Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="moto">
+                        <img class="mobile-logo" src="images/moto-edge-30-fusion.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Moto Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="poco">
+                        <img class="mobile-logo" src="images/poco-x6-pro.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Poco Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="redmi">
+                        <img class="mobile-logo" src="images/redmi-13-pro-plus.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Redmi Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="oppo">
+                        <img class="mobile-logo" src="images/oppo-f25-pro.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Oppo Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="iphone">
+                        <img class="mobile-logo" src="images/iphone-16.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Iphone Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="nothing">
+                        <img class="mobile-logo" src="images/nothing-phone2.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Nothing Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="oneplus">
+                        <img class="mobile-logo" src="images/oneplus-12.jpeg">
+                        <div class="shade"></div>
+                        <div class="title">Oneplus Mobiles</div>
+                    </button>
+                    <button class="mobiles" data-mobiles-name="vivo">
+                        <img class="mobile-logo" src="images/vivo-t3.jpeg">
+                        <div class="shade"></div>
+                        <div class="title"> Vivo Mobiles</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="new-arrivals">
+                <div style="position: relative;">
+                    <p style="font-weight: bold; font-size:1.8rem; margin:1rem;">New Arrivals</p>
+                    <div style="display:flex; align-items: center;">
+                        <div class="js-new-arrival-mobiles" style="display: flex; align-items: center;">
+                            
+                        </div>
+                    </div>
+                    <button class="new-arrivals-next"> > </button>
+                    <button class="new-arrivals-prev"> < </button>
+                </div>
+            </div>
+            <div class="flagships">
+                <div style="position: relative;">
+                    <p style="font-weight: bold; font-size:1.8rem; margin:1rem;">Flagship Mobiles</p>
+                    <div style="display:flex; align-items: center;">
+                        <div class="js-flagship-mobiles" style="display: flex; align-items: center;">
+                            
+                        </div>
+                    </div>
+                    <button class="flagship-next"> > </button>
+                    <button class="flagship-prev"> < </button>
+                </div>
+            </div>
+            
+            <div class="mid-range">
+                <div style="position: relative;">
+                    <p style="font-weight: bold; font-size:1.8rem; margin:1rem;">Mid-range Mobiles</p>
+                    <div style="display:flex;align-items: center;">
+                        <div class="js-mid-range-mobiles" style="display: flex; align-items: center;">
+                            
+                        </div>
+                    </div>
+                    <button class="mid-range-next"> > </button>
+                    <button class="mid-range-prev"> < </button>
+                </div>
+            </div>
+
+            <div class="budget">
+                <div style="position: relative;">
+                    <p style="font-weight: bold; font-size:1.8rem; margin:1rem;">Mid-range Mobiles</p>
+                    <div style="display:flex;align-items: center;">
+                        <div class="js-budget-mobiles" style="display: flex; align-items: center;">
+                            
+                        </div>
+                    </div>
+                    <button class="budget-next"> > </button>
+                    <button class="budget-prev"> < </button>
+                </div>
+            </div>
+
+
+            <div style="background-color: rgb(37, 35, 35);">
+                <div class="bottom-block">
+                    <div style="display:flex; flex-direction: column; align-items: center;">
+                        <div style="color:grey; margin:1rem;">ABOUT</div>
+                        <div class="about-block">
+                            <div>Contact Us</div>
+                            <div>About Us</div>
+                            <div>Carrer</div>
+                            <div>Corporate Information</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; flex-direction: column; align-items: center;">
+                        <div style="color:grey; margin:1rem;">SOCIAL MEDIA</div>
+                        <div class="social-media-block">
+                            <div>Instagram</div>
+                            <div>Twitter</div>
+                            <div>Facebook</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; flex-direction: column; align-items: center;">
+                        <div style="color:grey; margin:1rem;">HELP</div>
+                        <div class="help-block">
+                            <div>Help Center</div>
+                            <div>Inquery</div>
+                            <div>Chat with Us</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; flex-direction: column; align-items: center;">
+                        <div style="color:grey; margin:1rem;">CONSUMER POLICY</div>
+                        <div class="consumer-policy-block">
+                            <div>Privacy</div>
+                            <div>Security</div>
+                            <div>Terms of Use</div>
+                            <div>Terms and Conditions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div style="display: none;" class="required-mobiles">
+
+    </div>
+    <div style="display: none;" class="single-mobile">
+
+    </div>
+
+    <script type="module" src="javascript/Home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+
+    <link rel="stylesheet" href="Styles/single_mobile.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header class="header">
+                <div class="header-left-block">
+                    <div class="mobilemart-logo-image-block" onclick='window.open("Home.html" , "_self")'>
+                        <img class="mobilemart-logo-image" src="images/mobilemart-logo(1).png">
+                    </div>
+                </div>
+                <div class="header-middle-block">
+                    <div class="search-block">
+                        <input class="search-input" type="text" placeholder="Search">
+                        <button class="search-button"><img src="images/search-icon.png"></button> 
+                    </div>
+                </div>
+                <div class="header-right-block">
+                    <div class="cart-block">
+                        <a class="cart-button" href="Cart.html">
+                            <img src="images/cart-image.svg">
+                            <div>Cart</div>
+                            <div class="add-to-cart-tooltip "><div style="width:2rem; height:2rem; margin-right:5px;"><img style="border-radius:2px;" src="images/realme-11-pro-5g.jpeg"></div><div>Added to Cart</div></div>
+                        </a>
+                        <div class="cart-qty js-cart-qty"></div>
+                    </div>
+                    <div class="notification-block">
+                        <a class="notification-button" href="">
+                            <img src="images/notification-icon.jpg">
+                            <div>Notifications</div>
+                        </a>
+                    </div>
+                    <div class="profile-block">
+                        <a class="profile-button" href="">
+                            <img src="images/profile-image.svg">
+                            <div class="logined-name">Login/SignUp</div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="single-mobile">
+            <div>
+                <div class="single-mobile-block">
+                    <div class="single-mobile-img">
+                        <img src="images/iphone-16-pro-max.webp">
+                    </div>
+                </div>
+                <div class="buy-cart-buttons">
+                    <button class="buy-now-button">BUY NOW</button>
+                    <button class="add-to-cart-button">ADD TO CART</button>
+                </div>
+            </div>
+            <div style="flex:2;" class="single-mobile-details-block">
+                <div class="single-mobile-details">
+                    <div class="single-mobile-name">Apple iPhone 16 Pro</div> 
+                    <div class="single-mobile-rating">4.4 <img style="height:1rem; width:1rem; margin:0.2rem 0rem 0rem 0rem" src="images/star-imgae.svg"> </div>
+                    <div class="single-mobile-price">&#8377;1,29,900</div>
+                    <div style="display:flex; gap:2rem; margin-top:2rem;">
+                        <div style="font-size:1.1rem;">Highlights</div>
+                        <div style="display:flex; flex-direction: column; gap:0.5rem; margin-left:0.5rem;">
+                            <div class="single-mobiole-storage" style="display: flex; align-items: center;"><div class="bullet-point"></div>8 GB RAM | 256 ROM</div>
+                            <div class="single-mobile-display" style="display: flex; align-items: center;"><div class="bullet-point"></div>16.0 cm (6.3 inch) Super Retina XDR Display</div>
+                            <div class="single-mobile-camera" style="display: flex; align-items: center;"><div class="bullet-point"></div> 48MP + 48MP + 12MP | 12MP Front Camera </div>
+                            <div class="single-mobile-processor" style="display: flex; align-items: center;"><div class="bullet-point"></div>A18 Pro Chip, 6 Core Processor Processor</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="border:1px solid , rgba(128, 128, 128, 0.458); margin:2rem 2rem; width:100%;" class="single-mobile-specifications-block">
+                    <table>
+                        <tr>
+                            <div style="font-size:1.8rem; padding:1rem; border-bottom:1px solid rgba(128, 128, 128, 0.415);">Specifications</div>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(128, 128, 128, 0.458);">
+                            <div style="font-size:1.3rem; padding:1rem;">General</div>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li style="list-style-type:none;">In the box</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li style="list-style-type:none;">Handset, USB C Charge Cable (1m), Documentation</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tr>
+                    </table>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="javascript/single_mobile.js"></script>
+</body>
+</html>

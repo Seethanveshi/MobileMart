@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment-Page</title>
+    <link rel="stylesheet" href="Styles/payment_page.css">
+    <link rel="stylesheet" href="Styles/Cart.css">
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="header-left-block">
+                <div class="mobilemart-logo-image-block" onclick='window.open("Home.html" , "_self")'>
+                    <img class="mobilemart-logo-image" src="images/mobilemart-logo(1).png">
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="payment-page" style="display: flex; gap:1rem; margin-top:2rem;">
+        <div style="flex:1;">
+            <div class="cash-on-delivery">
+                <label style="display:flex; align-items: center; width:11rem; cursor: pointer; margin-right:20rem;">
+                    <input style="margin:0px 3px 0px 0px; cursor: pointer;" name="payment-option" type="radio" placeholder="CASH" value="CASH ON DELIVERY" required><div style="color:green">CASH ON DELIVERY</div>
+                </label>
+            </div>
+        </div>
+        <div>
+            <div class="right-section">
+                <div class="order-summary">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="javascript/payment_page.js"></script>
+</body>
+</html>
