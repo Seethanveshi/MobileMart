@@ -261,7 +261,7 @@ for_single_mobile.forEach((mobile) =>{
     mobile.addEventListener("click" , ()=>{
         let mobile_name=mobile.dataset.mobileName;
         localStorage.setItem('singleMobile' , JSON.stringify(mobile_name));
-        window.open('http://127.0.0.1:5501/single_mobile.html' , "_blank");
+        window.open('single_mobile.html' , "_blank");
     })
     
 })
